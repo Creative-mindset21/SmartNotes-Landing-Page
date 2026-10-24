@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-text-color: #efece6;
+  --color-primary-100: #bababa;
+  --color-primary-300: #333333;
+  --color-primary-400: #080808;
+
+  --color-secondary-200: #048c80;
+  --color-linear-1: #aad9d1;
+  --color-linear-2: #017373;
+
+  /* Font Size */
+}
+
+@layer base {
+  body {
+    position: relative;
+    background: var(--color-primary-400);
+    color: var(--color-text-color);
+    font-family: "DM Sans", sans-serif;
+    overflow: hidden;
+  }
+
+  header {
+    @apply bg-transparent h-21.5 flex items-center border-b border-secondary-200 fixed top-0 left-0 right-0 z-50;
+  }
+
+  h1 {
+    @apply text-3xl font-bold leading-[130%] tracking-[-1%] mb-4 md:text-[3.1rem] xl:text-6xl md:leading-[106%];
+  }
+}
+
+@layer components {
+  .header-box {
+    @apply box flex items-center justify-between lg:max-w-312;
+  }
+}
+
+/* Utilities */
+@utility nav-links-lg {
+  @apply text-base leading-normal;
+}
+
+@utility nav-links-sm {
+  @apply leading-normal text-xl;
+}
+
+@utility box {
+  @apply w-full max-w-159 lg:max-w-284 xl:max-w-7xl lg:mx-auto px-8;
+}
+
+@utility btn {
+  @apply btn-gradient items-center gap-4 cursor-pointer;
+}
+
+@utility btn-gradient {
+  @apply -bg-linear-45 from-linear-1 to-linear-2 rounded-lg py-4 text-primary-400 px-6;
+}
+
+@utility text-gradient {
+  @apply bg-transparent text-transparent -bg-linear-45 from-linear-1 to-linear-2 bg-clip-text;
+}
