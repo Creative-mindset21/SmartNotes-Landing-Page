@@ -3,7 +3,7 @@ import heroImg from "../assets/abstract-shapes.png";
 
 const Hero = () => {
   return (
-    <section className="pt-50 lg:pt-40 box flex items-center justify-between gap-10">
+    <section className="pt-50 pb-16 lg:pt-40 box flex items-center justify-between gap-10">
       <div>
         <h1>
           <span className="text-gradient">Intelligent</span> cloud-based{" "}

@@ -20,7 +20,7 @@ const Header = () => {
         <nav
           className={`absolute top-22 right-0 h-[60vh] w-full bg-primary-400 shadow-lg shadow-white/5 pt-20 pl-10 transition-all ease-in-out lg:hidden ${isOpen ? "translate-x-0 visible opacity-100" : "translate-x-full hidden opacity-0"}`}
         >
-          <ul className="flex flex-col space-y-4 w-1/2">
+          <ul className="flex flex-col space-y-4 md:space-y-12 w-3/4">
             {navLinks.map(({ title, href }, id) => (
               <li
                 key={id}
@@ -28,7 +28,7 @@ const Header = () => {
               >
                 <a
                   href={href}
-                  className={`nav-links-sm  ${activeLink === title ? "text-gradient" : ""}`}
+                  className={`nav-links-sm md:text-2xl  ${activeLink === title ? "text-gradient" : ""}`}
                   onClick={() => setActiveLink(title)}
                 >
                   {title}

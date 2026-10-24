@@ -11,7 +11,17 @@
   --color-linear-1: #aad9d1;
   --color-linear-2: #017373;
 
-  /* Font Size */
+  @keyframes companyMove {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(-350%);
+    }
+  }
+
+  --animate-companyMove: companyMove 25s infinite linear;
 }
 
 @layer base {
@@ -34,7 +44,7 @@
 
 @layer components {
   .header-box {
-    @apply box flex items-center justify-between lg:max-w-312;
+    @apply box flex items-center justify-between md:max-w-312;
   }
 }
 
