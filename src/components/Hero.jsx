@@ -16,7 +16,7 @@ const Hero = () => {
           work today.
         </p>
 
-        <form className="max-w-108.5 relative bg-text-color rounded-lg border border-secondary-200 py-2 px-4 flex items-center gap-2">
+        <form className="max-w-108.5 md:max-w-128.5 relative bg-text-color rounded-lg border border-secondary-200 py-2 px-4 flex items-center gap-2">
           <input
             type="email"
             name="email"
