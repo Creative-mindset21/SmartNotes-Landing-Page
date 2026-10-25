@@ -9,7 +9,7 @@ const Testimonial = () => {
   const [activeTestimonial, setActiveTestimonial] = useState(testimonials[0]);
 
   return (
-    <section className="w-full max-w-117.75 mx-auto my-20 space-y-5 text-center leading-normal relative px-5">
+    <section className="w-full max-w-117.75 lg:max-w-150 mx-auto my-20 space-y-5 text-center leading-normal relative px-5">
       {/* First Quotation Mark */}
       <img
         src={doubleQuote}
@@ -18,7 +18,7 @@ const Testimonial = () => {
       />
 
       {/* The Active Testimonial */}
-      <p className="font-bold text-xl md:text-2xl leading-[1.4] md:tracking-[-1%]">
+      <p className="font-bold text-xl md:text-2xl lg:text-3xl leading-[1.4] md:tracking-[-1%]">
         {activeTestimonial?.testimonial}
       </p>
 
