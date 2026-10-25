@@ -5,7 +5,7 @@ const Companys = () => {
   const repetitions = 6;
 
   return (
-    <section aria-hidden="true">
+    <section aria-hidden="true" className="overflow-x-hidden">
       <div className="flex w-max group items-center">
         {Array.from({ length: repetitions }).map((_, index) => (
           <ul

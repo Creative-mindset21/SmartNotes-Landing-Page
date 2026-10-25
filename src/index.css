@@ -4,6 +4,7 @@
   /* Colors */
   --color-text-color: #efece6;
   --color-primary-100: #bababa;
+  --color-primary-200: #737373;
   --color-primary-300: #333333;
   --color-primary-400: #080808;
 
@@ -21,7 +22,7 @@
     }
   }
 
-  --animate-companyMove: companyMove 25s infinite linear;
+  --animate-companyMove: companyMove 35s infinite linear;
 }
 
 @layer base {
@@ -30,7 +31,6 @@
     background: var(--color-primary-400);
     color: var(--color-text-color);
     font-family: "DM Sans", sans-serif;
-    overflow: hidden;
   }
 
   header {
@@ -44,7 +44,7 @@
 
 @layer components {
   .header-box {
-    @apply box flex items-center justify-between md:max-w-312;
+    @apply box flex items-center justify-between;
   }
 }
 
@@ -58,7 +58,7 @@
 }
 
 @utility box {
-  @apply w-full max-w-159 lg:max-w-284 xl:max-w-7xl lg:mx-auto px-8;
+  @apply w-full lg:max-w-284 xl:max-w-7xl px-4 md:px-8 lg:mx-auto;
 }
 
 @utility btn {
