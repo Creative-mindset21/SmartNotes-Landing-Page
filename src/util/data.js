@@ -3,6 +3,13 @@ import company2 from "../assets/LogoBanner/logo2.svg";
 import company3 from "../assets/LogoBanner/logo3.svg";
 import company4 from "../assets/LogoBanner/logo4.svg";
 
+import thumbsUp from "../assets/features/thumbs-up.svg";
+import branch from "../assets/features/branch.svg";
+import flag from "../assets/features/flag.svg";
+import globe from "../assets/features/globe.svg";
+import graphicCircle from "../assets/features/graphic-circle.svg";
+import hash from "../assets/features/hash.svg";
+
 export const navLinks = [
   {
     title: "Features",
@@ -96,5 +103,50 @@ export const testimonials = [
     name: "William Brown",
     testimonial:
       "This platform combines simplicity with powerful collaboration tools. It has become an essential part of our team's workflow.",
+  },
+];
+
+export const features = [
+  {
+    id: 1,
+    title: "Cross-Platform Accessibility",
+    description:
+      "Whether you're on your desktop, tablet, or smartphone, SmartNotes is accessible across all devices. Work seamlessly on the go and never miss a beat.",
+    iconSrc: thumbsUp,
+  },
+  {
+    id: 2,
+    title: "Customizable Templates",
+    description:
+      "Create custom templates for your recurring tasks or projects to save time and ensure consistency. Tailor SmartNotes to fit your unique workflow and preferences.",
+    iconSrc: globe,
+  },
+  {
+    id: 3,
+    title: "Secure Cloud Storage",
+    description:
+      "Rest easy knowing that your notes are securely stored in the cloud. Access your information from any device, anytime, without worrying about losing important data.",
+    iconSrc: flag,
+  },
+  {
+    id: 4,
+    title: "Real-Time Collaboration",
+    description:
+      "Collaborate seamlessly with your team members or classmates in real-time on shared notes and projects.",
+    iconSrc: graphicCircle,
+  },
+  {
+    id: 5,
+    title: "AI-Powered Organization",
+    description:
+      "Our AI-powered organization feature categorizes and prioritizes your notes, making it easy to find what you need when you need it.",
+    iconSrc: hash,
+  },
+  {
+    id: 6,
+    title: "Integrations",
+    description:
+      "Connect SmartNotes with your favorite productivity tools like Google Drive, Trello, and Slack. Streamline your workflow by syncing data across platforms and enhancing collaboration.",
+    iconSrc: branch,
   },
 ];
