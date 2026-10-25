@@ -4,6 +4,7 @@ import Feature from "./components/Feature";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Testimonial from "./components/Testimonial";
+import Video from "./components/Video";
 
 const App = () => {
   return (
@@ -15,6 +16,8 @@ const App = () => {
         <Companys />
         <Testimonial />
         <Feature />
+        <Testimonial />
+        <Video />
         <Testimonial />
       </main>
     </>
