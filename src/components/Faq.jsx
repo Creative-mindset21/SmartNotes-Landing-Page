@@ -3,7 +3,7 @@ import FaqCard from "./FaqCard";
 
 const Faq = () => {
   return (
-    <section className="box space-y-18 mb-10">
+    <section className="box space-y-18 mb-10" id="faqs">
       <div className="space-y-5 text-center">
         <h2>
           Frequently Asked{" "}

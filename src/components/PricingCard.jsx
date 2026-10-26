@@ -3,7 +3,7 @@ import check from "../assets/check.png";
 
 const PricingCard = ({ iconSrc, planName, offers, isYearly, price }) => {
   return (
-    <li className="bg-primary-50 py-10 px-8 rounded-[10px] space-y-8 border-2 border-secondary-200 w-full max-w-95 mx-auto group nth-of-type-[2]:bg-transparent">
+    <li className="bg-primary-50 py-10 px-8 rounded-[10px] space-y-8 border-2 border-secondary-200 w-full lg:max-w-95  mx-auto group nth-of-type-[2]:bg-transparent">
       <div className="flex items-center gap-4">
         <img
           src={iconSrc}

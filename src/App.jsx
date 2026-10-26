@@ -1,6 +1,7 @@
 import "../fonts/fonts.css";
 
 import Companys from "./components/Companys";
+import Cta from "./components/cta";
 import Faq from "./components/Faq";
 import Feature from "./components/Feature";
 import Header from "./components/Header";
@@ -24,6 +25,8 @@ const App = () => {
         <Testimonial />
         <Pricing />
         <Faq />
+        <Testimonial />
+        <Cta />
       </main>
     </>
   );
