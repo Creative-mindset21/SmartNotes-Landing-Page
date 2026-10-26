@@ -3,7 +3,7 @@ import FeatureCard from "./FeatureCard";
 
 const Feature = () => {
   return (
-    <section className="box space-y-22">
+    <section className="box space-y-22" id="features">
       <div className="space-y-6 text-center">
         <h2>
           Discover the Power of{" "}

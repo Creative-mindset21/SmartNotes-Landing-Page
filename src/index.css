@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
+*,
+::before,
+::after {
+  scroll-behavior: smooth;
+  scroll-margin-top: 6rem;
+}
+
 @theme {
   /* Colors */
   --color-text-color: #efece6;
+  --color-primary-50: #f7f7f7;
   --color-primary-100: #bababa;
   --color-primary-200: #737373;
   --color-primary-300: #333333;
@@ -69,6 +77,10 @@
         @apply lg:col-span-2;
       }
     }
+  }
+
+  .pricing-btn {
+    @apply bg-text-color rounded-lg py-4 w-full border border-secondary-200 text-primary-400 flex items-center gap-4 justify-center font-bold leading-normal cursor-pointer transition-transform duration-300 hover:scale-103;
   }
 }
 

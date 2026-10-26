@@ -9,6 +9,11 @@ const Header = () => {
   const [activeLink, setActiveLink] = useState("Features");
   const [isOpen, setIsOpen] = useState(false);
 
+  const handleLinkClick = (title) => {
+    setActiveLink(title);
+    setIsOpen(false);
+  };
+
   return (
     <header>
       <div className="header-box">
@@ -36,7 +41,7 @@ const Header = () => {
                 <a
                   href={href}
                   className={`nav-links-sm md:text-2xl  ${activeLink === title ? "text-gradient" : ""}`}
-                  onClick={() => setActiveLink(title)}
+                  onClick={() => handleLinkClick(title)}
                 >
                   {title}
                 </a>
